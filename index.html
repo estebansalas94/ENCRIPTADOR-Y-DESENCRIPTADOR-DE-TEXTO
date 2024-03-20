@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="style.css" rel="stylesheet" type="text/css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/crypto-js/4.1.1/crypto-js.min.js"></script>
+</head>
+<body>
+    <header>
+        <div>
+            ENCRIPTADOR Y DESENCRIPTADOR DE TEXTO
+           
+        </div>
+        <marquee behavior="" direction=""><p>Este encriptador y desencriptador de texto esta creado 
+            con el fin de ser una herramienta fundamnetal en la seguridad de la información, 
+            ya que garantizan la privacidad y confidencialidad de los datos sensibles.
+          </p></marquee> 
+        </>
+    </header>
+
+    <section>
+        <div class="contenido-seccion">
+            <div class="fila">
+                <div class="col">
+                    <h3>Ingrese el Texto</h3>
+                    <div>
+                        <textarea class="texto" name="" id="ingresarTexto" placeholder="Ingrese su texto aqui..." cols="50" rows="15"></textarea>    
+                    </div>
+                    <button onclick="encriptarTexto();" class="enviar">Encriptar</button>
+                    <button onclick="desencriptarTexto();" class="enviar">Desencriptar</button>
+                </div>
+                <!-- INTERESES -->
+                <div class="col">
+                    <h3 class="texto-escritura" id="mensaje">...</h3>
+                    <div>
+                        <textarea  readonly placeholder="Aun no se muestra texto" class="texto" name="" id="mostrarTexto" cols="50" rows="15"></textarea> 
+                    </div>
+                    <button id="copiar" onclick="copiarTexto();" class="enviar">Copiar</button>
+                    <button onclick="limpiar();" class="enviar">Limpiar Todo</button>
+                </div>
+            </div>
+        </div>
+    </section>
+</body>
+<script src="funcion.js"></script>
+
+</html>
